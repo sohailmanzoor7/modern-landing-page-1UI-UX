@@ -1,0 +1,155 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+}
+#main{
+  width: 100%;
+  min-height: 100vh;
+}
+#top{
+  width: 100vw;
+  min-height: 55vh;
+  background-image: url(eberhard-grossgasteiger-y2azHvupCVo-unsplash.jpg);
+  background-size: cover;
+  background-position: 55% 45%;
+  background-repeat: no-repeat;
+}
+#overlay{
+  position: relative;
+  width: 100%;
+  min-height: inherit;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#text{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 20%;
+  padding: 0 10vw;
+  width: 100%;
+  color: #fff;
+}
+#text h1{
+  font-weight: 500;
+  font-size: 4vw;
+}
+#text-right{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  display: flex;
+}
+#text-right p{
+  font-size: 14px;
+  width: 40%;
+}
+#text-right i{
+  color: white;
+}
+#bottom{
+  display: flex;
+  width: 100%;
+  min-height: 45vh;
+}
+#bone{
+  padding: 30px;
+  width: 25%;
+  min-height: inherit;
+  background-color: #fff;
+}
+#bone p{
+  font-size: 12px;
+  margin-top: 20px;
+}
+#btwo{
+  width: 25%;
+  min-height: inherit;
+  background-image: url(annie-spratt-WBpr_yH0Frg-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#bthree{
+  width: 20%;
+  min-height: inherit;
+}
+#bthree-top{
+  width: 100%;
+  min-height: 20vh;
+  background-color: orangered;
+  padding: 20px;
+  color: #fff;
+}
+#bthree-top p{
+  margin-top: 10px;
+  font-size: 12px;
+}
+#bthree-bottom{
+  width: 100%;
+  min-height: 20vh;
+  background-image: url(eugenivy_now-caufkpSLh6E-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#bfour{
+  width: 30%;
+  min-height: inherit;
+  background-color: #444;
+  color: #fff;
+  padding: 30px;
+}
+.notify{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.notify img{
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 50%;
+}
+.notify p{
+  width: 86%;
+  font-size: 12px;
+  padding-bottom: 5px;
+}
+@media(max-width:768px){
+  #overlay #text{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #text h1{
+    font-weight: 500;
+    font-size: 8vw;
+  }
+  #overlay #text #text-right{
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  #overlay #text #text-right p{
+    font-size: 4vw;
+    width: initial;
+    margin-top: 20px;
+  }
+  #overlay #text #text-right #icons{
+    margin-top: 30px;
+  }
+  #bottom{
+    flex-direction: column;
+    min-height: 20vh;
+  }
+  #top{
+   
+  }
+  #bottom >*{
+    width: 100%;
+  }
+}
